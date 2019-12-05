@@ -1,0 +1,119 @@
+<HTML>
+<HEAD>
+<meta charset="utf-8">
+<TITLE> Лабораторна робота №3</TITLE>
+<script language="JavaScript">
+function maxval (obj ){
+var a = Number(obj.num1.value);
+var b = Number(obj.num2.value);
+var c = Number(obj.num3.value);
+var d = Number(obj.num4.value);
+var e = Number(obj.num5.value);
+var m=a
+var m1=0
+if (b > m) m=b
+if (c > m) m=c
+if (d > m) m=d
+if (e > m) m=e
+obj.res1.value=m 
+if(m==a)
+m1++
+if(m==b)
+m1++
+if(m==c)
+m1++
+if(m==d)
+m1++
+if(m==e)
+m1++
+obj.res2.value=m1 
+}
+</script>
+
+<script language="JavaScript">
+
+function triangle(obj)
+{
+var a = Number(obj.num1.value);
+var b = Number(obj.num2.value);
+var c = Number(obj.num3.value);
+var string
+if(a+b>c && b+c>a && a+c>b)
+string="yes";
+else
+ string="No";
+
+obj.res3.value=string;
+}
+</script>
+
+<script language="JavaScript">
+
+function cordinte(obj)
+{
+var a = Number(obj.param1.value);
+var b = Number(obj.param2.value);
+var c;
+if(a>0 && b>0)
+   c="1 чверть";
+else if(a<0 && b>0)
+   c="2 чверть";
+else if(a<0 && b<0)
+   c="3 чверть";
+else if(a>0 && b<0)
+   c="4 чверть";
+else
+	c="Початок координат"
+obj.res3.value=c;
+}
+</script>
+
+</HEAD>
+
+<BODY background="fon1.jpg">
+<h1> Обчислення максимального значення</h1>
+
+<FORM name="form1">
+Число 1: <input type="text" size=8 name="num1"><br>
+Число 2: <input type="text" size=8 name="num2"><br> 
+Число 3: <input type="text" size=8 name="num3"><br>
+Число 4: <input type="text" size=8 name="num4"><br> 
+Число 5: <input type="text" size=8 name="num5"><br>
+
+Максимальне значення = <input type="text" size=8 name="res1"><br>
+Кількість повторів максимального значення = <input type="text" size=8 name="res2"><br>
+<input type="button" value="Визначити" onClick="maxval(form1)">
+<input type="reset">
+</FORM>
+
+
+<h1> Сценарій визначення можливості побудови трикутника</h1>
+
+<FORM name="form2">
+Введіть довжину сторони (a): <input type="text" size=8 name="num1"><br>
+Введіть довжину сторони (b): <input type="text" size=8 name="num2"><br> 
+Введіть довжину сторони (c): <input type="text" size=8 name="num3"><br>
+<input type="text" size=8 name="res3"><br>
+<input type="button" value="Визначити" onClick="triangle(form2)">
+<input type="reset">
+</FORM>
+
+<h1> Сценарій визначення до якої із чвертей системи координат належить точка, задана координатами на площині</h1>
+
+<FORM name="form3">
+x1: <input type="number" size=10 value="Введите число" name="param1" > <br>
+y1: <input type="number" size=10 value="Введите число" name="param2" > <br>
+<input type="text" size=15 name="res3"><br>
+<input type="button" value="Визначити" onClick="cordinte(form3)">
+<input type="reset">
+</FORM>
+
+</BODY>
+</HTML> 
+
+
+
+
+
+
+
