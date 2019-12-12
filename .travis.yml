@@ -6,7 +6,7 @@ install:
 script: npm test
 deploy:
   provider: heroku
-  app: weblab5kpi
+  app: "kostya69"
   on:
     repo: 69Kostya69/lab5
   strategy: git

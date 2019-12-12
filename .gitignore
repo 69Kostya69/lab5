@@ -1,1 +1,5 @@
-img/
+./img
+.eslintrc.json
+.prettierrc.json
+.travis.yml
+.git
