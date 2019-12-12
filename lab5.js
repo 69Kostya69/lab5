@@ -11,7 +11,7 @@ fs.readFile('./index.html', (err, html) => {
   res.writeHeader(200, {"Content-Type" : "text/html"})
   res.write(html)
   res.end()
-  }).listen(port, hostname, () => {
+  }).listen(port, () => {
      console.log(`Server running at http://${hostname}:${port}/`)
    })
  })
