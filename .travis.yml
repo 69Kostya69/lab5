@@ -7,6 +7,8 @@ script:
   - echo "hello"
 deploy:
   provider: heroku
+  api_key:
+    secure: 47c803d9-ee78-4ef6-a4dc-22f2d48bde5f
   app: "kostya69"
   on:
     repo: 69Kostya69/lab5
