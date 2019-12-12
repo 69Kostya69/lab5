@@ -3,6 +3,8 @@ node_js:
 - 12
 install:
   - npm install
+script:
+  - echo "hello"
 deploy:
   provider: heroku
   app: "kostya69"
